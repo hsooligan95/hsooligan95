@@ -42,6 +42,7 @@ execute safely, meter the cost.
 
 | Project | What it is |
 | --- | --- |
+| [agent-trace](https://github.com/hsooligan95/agent-trace) | The trace and audit spine the rest of the platform shares: one trace ID follows work across agents into a single hash-chained, tamper-evident event store with decision records, so a full drill (canary promotion block → gate screening → blast-radius kill / resume / rollback) reads back as 55 events on one verified timeline. agent-gate and agent-canary now emit trace IDs into it. |
 | [agent-gate](https://github.com/hsooligan95/agent-gate) | An MCP security gateway in TypeScript: per-agent identity and tool allowlists, policy decisions (allow / deny / human approval), prompt-injection and PII screening of tool results, and a tamper-evident, hash-chained audit log with per-run evidence-pack export. |
 | [agent-canary](https://github.com/hsooligan95/agent-canary) | CI for agent behavior: shadow-runs a candidate agent version against the current one over a golden task suite with programmatic checks, diffs success / accuracy / cost / latency, and blocks promotion on regression. |
 | [blast-radius](https://github.com/hsooligan95/blast-radius) | An infrastructure remediation agent (LangGraph + mock AWS) whose engineering is the execution shell: reviewable plan → human approval → durable checkpointed execution that survives `kill -9` mid-task → verification → automatic rollback, under least-privilege policies with a compliance-style audit log. |
