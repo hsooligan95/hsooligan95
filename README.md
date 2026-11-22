@@ -75,11 +75,10 @@ execute safely, meter the cost.
 | Project | What it is |
 | --- | --- |
 | [mcp-aws-explorer](https://github.com/hsooligan95/mcp-aws-explorer) | A Model Context Protocol (MCP) server in TypeScript that exposes read-only AWS inventory and cost tools over a local mock dataset — list resources, summarize costs, find idle resources. Also serves as the demo upstream behind AgentGate. |
-| [pulumi-serverless-stack](https://github.com/hsooligan95/pulumi-serverless-stack) | A Pulumi program in TypeScript defining a serverless API (API Gateway + Lambda + DynamoDB) as real code — no YAML templates. |
 
 ## What I'm focused on
 
-- Infrastructure as code in general-purpose languages (Pulumi, CDK)
+- Infrastructure as code in general-purpose languages (AWS CDK)
 - AI agent systems with tool calling, orchestration, and evaluation
 - Serverless architecture on AWS, including cost and usage visibility
 
