@@ -26,6 +26,13 @@ tell one coherent story.
 - Honest limitations are part of the brand across this portfolio —
   keep them visible rather than smoothing them over.
 
+## Verification
+
+There is no test suite in this repo — it is documentation only. The
+verification step for any README edit is checking each changed claim
+against the linked repo itself (its README, its tests, its current
+state) before committing; an unverified claim does not ship.
+
 ## Shared rules
 
 - Use Unix LF line endings in every file; never CRLF.
