@@ -1,6 +1,10 @@
-# Andrew Hsu — Senior Software Engineer
+# Andrew Hsu
 
-Senior Software Engineer with 8 years of experience building cloud infrastructure and
+**▶ Interactive version of this page — the platform graph, a replayable run, and a live tamper test: [hsooligan95.github.io](https://hsooligan95.github.io/)**
+
+[![The agent platform as a fleet graph](assets/fleet-graph.png)](https://hsooligan95.github.io/)
+
+I build cloud infrastructure and
 developer platforms on AWS and Azure. Infrastructure as code practitioner in
 general-purpose languages (AWS CDK and CloudFormation in TypeScript, Python, and Go),
 with deep experience in serverless systems, deployment orchestration, and multi-cloud
@@ -39,6 +43,10 @@ layer that makes them safe to run in production — govern the tools, gate the c
 execute safely, meter the cost.
 
 **The agent platform layer**
+
+[![AgentTrace's live dashboard during a drill run](assets/dashboard-live.png)](https://github.com/hsooligan95/agent-trace)
+
+*AgentTrace's dashboard, live during a drill — the full run below, recorded on one verified timeline.*
 
 | Project | What it is |
 | --- | --- |
