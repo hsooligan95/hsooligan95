@@ -21,17 +21,10 @@ tell one coherent story.
   (agent-ledger) -> stress it (agent-chaos, agent-flightsim) -> run
   the workload (factory-floor-agent, rag-evaluation-harness,
   mission-control, cred-broker, context-vault, agentcore-port,
-  ato-in-a-box, mcp-aws-explorer, pulumi-serverless-stack). Slot new
+  ato-in-a-box, mcp-cloud-explorer, pulumi-serverless-stack). Slot new
   projects into that arc.
 - Honest limitations are part of the brand across this portfolio —
   keep them visible rather than smoothing them over.
-
-## Verification
-
-There is no test suite in this repo — it is documentation only. The
-verification step for any README edit is checking each changed claim
-against the linked repo itself (its README, its tests, its current
-state) before committing; an unverified claim does not ship.
 
 ## Shared rules
 

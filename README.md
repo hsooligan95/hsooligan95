@@ -74,7 +74,26 @@ execute safely, meter the cost.
 
 | Project | What it is |
 | --- | --- |
-| [mcp-aws-explorer](https://github.com/hsooligan95/mcp-aws-explorer) | A Model Context Protocol (MCP) server in TypeScript that exposes read-only AWS inventory and cost tools over a local mock dataset — list resources, summarize costs, find idle resources. Also serves as the demo upstream behind AgentGate. |
+| [mcp-cloud-explorer](https://github.com/hsooligan95/mcp-cloud-explorer) | A Model Context Protocol (MCP) server in TypeScript with a provider-agnostic tool surface — one set of read-only inventory and cost tools (list resources, summarize costs, find idle resources) spanning AWS, Azure, Google Cloud, and OCI, all over local mock datasets. Also serves as the demo upstream behind AgentGate. |
+
+## Run it yourself
+
+The whole platform runs locally — no API keys, no accounts, no cloud
+spend. Clone **only this repo** and use the scripts in
+[`platform/`](platform/):
+
+```bash
+git clone https://github.com/hsooligan95/hsooligan95.git
+cd hsooligan95
+./platform/setup.sh      # clones the 15 project repos under ./fleet/ + installs deps
+./platform/test-all.sh   # every repo's own test suite, one by one, with a summary table
+./platform/demo.sh       # the platform drill, then the live AgentTrace dashboard
+```
+
+`demo.sh` finishes by serving the dashboard on the drill's verified
+trace store at `http://127.0.0.1:8765/` (Ctrl+C stops it). Works on
+Ubuntu and WSL2. See [`platform/README.md`](platform/README.md) for
+prerequisites, expected runtimes, and WSL notes.
 
 ## What I'm focused on
 
