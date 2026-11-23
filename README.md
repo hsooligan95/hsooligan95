@@ -2,6 +2,8 @@
 
 **▶ Interactive version of this page — the platform graph, a replayable run, and a live tamper test: [hsooligan95.github.io](https://hsooligan95.github.io/)**
 
+New here? [How this platform works — the full picture](PLATFORM-GUIDE.md)
+
 [![The agent platform as a fleet graph](assets/fleet-graph.png)](https://hsooligan95.github.io/)
 
 I build cloud infrastructure and
